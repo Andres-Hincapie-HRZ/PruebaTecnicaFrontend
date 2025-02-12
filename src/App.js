@@ -8,7 +8,7 @@ import './estilos/index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/PruebaTecnicaFrontend">
       <AuthProvider>
         <HotelesProvider>
           <div className="app">
