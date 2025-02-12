@@ -212,16 +212,31 @@
   }
 }
 
-/* Media Queries */
+/* Actualizaciones para Media Queries */
 @media (max-width: 1024px) {
   .hero-section h1 {
     font-size: 3.5rem;
   }
+  
+  .destinos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+  
+  .contenedor-lista {
+    padding: 2rem 15px;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 4rem 0;
+  }
+  
   .hero-section h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   
   .hero-subtitle {
@@ -229,13 +244,38 @@
   }
   
   .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  
+  .destinos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .destino-card {
+    height: 250px;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-header {
+    margin: 2rem 0;
   }
   
   .section-header h2 {
@@ -244,5 +284,28 @@
   
   .destacados-section {
     padding: 2rem 1rem;
+  }
+  
+  .destino-card {
+    height: 200px;
+  }
+  
+  .destino-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Ajustes para dispositivos muy pequeños */
+@media (max-width: 320px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .destino-card {
+    height: 180px;
   }
 } 

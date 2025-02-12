@@ -11,6 +11,15 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .seccion-pie {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
   }
   
   .seccion-pie h3 {
@@ -51,4 +60,33 @@
   .derechos {
     margin-top: 20px;
     font-size: 0.9em;
+  }
+
+  @media (max-width: 768px) {
+    .contenedor-pie {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .seccion-pie {
+      margin: 10px 0;
+    }
+    
+    .redes-sociales {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pie-pagina {
+      padding: 15px;
+    }
+    
+    .seccion-pie h3 {
+      font-size: 1.2em;
+    }
+    
+    .seccion-pie a {
+      font-size: 0.9em;
+    }
   }
