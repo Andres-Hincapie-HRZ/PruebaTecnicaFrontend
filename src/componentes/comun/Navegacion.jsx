@@ -24,8 +24,8 @@ const Navegacion = () => {
   const mostrarOpcionesUsuario = () => {
     if (!usuario) return null;
 
-    // Si el usuario es agente, mostrar gestión de hoteles y reservas
-    if (usuario.rol === 'agente') {
+    // Si el usuario es admin o agente, mostrar gestión de hoteles y reservas
+    if (usuario.rol === 'admin' || usuario.rol === 'agente') {
       return (
         <div className="botones-usuario">
           <Link to="/gestion-hoteles" className="boton-nav">

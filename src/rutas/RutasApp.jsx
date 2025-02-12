@@ -16,7 +16,9 @@ const RutasPrivadas = ({ children }) => {
 
 const RutasAgente = ({ children }) => {
   const { usuario } = useAuth();
-  return usuario && usuario.rol === 'agente' ? children : <Navigate to="/" />;
+  return usuario && (usuario.rol === 'admin' || usuario.rol === 'agente') 
+    ? children 
+    : <Navigate to="/" />;
 };
 
 const RutasApp = () => {
