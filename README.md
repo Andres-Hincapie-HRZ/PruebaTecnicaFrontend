@@ -22,7 +22,7 @@ La aplicación permite la administración de hoteles locales y reservas, con dos
 
 ## Características Técnicas
 
-- Framework: React 18
+- Framework: React 19
 - Gestión de Estado: Context API
 - Enrutamiento: React Router
 - Estilos: CSS Modules
