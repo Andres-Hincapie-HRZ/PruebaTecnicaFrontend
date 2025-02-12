@@ -1,0 +1,54 @@
+/* estilos/PiePagina.css */
+
+.pie-pagina {
+    background-color: #000; /* Negro */
+    color: #fff; /* Blanco */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contenedor-pie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .seccion-pie h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .seccion-pie ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .seccion-pie li {
+    margin-bottom: 5px;
+  }
+  
+  .seccion-pie a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .seccion-pie a:hover {
+    color: #ccc; /* Gris claro */
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+  }
+  
+  .redes-sociales a:hover {
+    color: #ccc; /* Gris claro */
+  }
+  
+  .derechos {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }

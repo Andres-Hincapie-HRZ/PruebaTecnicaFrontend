@@ -1,0 +1,38 @@
+@import 'variables.css';
+@import 'autenticacion.css';
+@import 'hoteles.css';
+@import 'reservas.css';
+@import 'comun.css';
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--espaciado-md);
+}
+
+/* Utilidades comunes */
+.texto-centro {
+  text-align: center;
+}
+
+.margen-y {
+  margin: var(--espaciado-md) 0;
+}
+
+.padding-y {
+  padding: var(--espaciado-md) 0;
+} 

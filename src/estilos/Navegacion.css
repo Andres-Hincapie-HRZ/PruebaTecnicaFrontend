@@ -1,0 +1,126 @@
+.navegacion-principal {
+    background-color: #000; /* Negro */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.enlaces {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu-autenticacion {
+    display: flex;
+    align-items: center;
+}
+
+.botones-usuario {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.boton-nav {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.boton-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.boton-cerrar-sesion {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ff4444;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: #ff4444;
+    color: white;
+}
+
+.botones-auth {
+    display: flex;
+    gap: 1rem;
+}
+
+.boton-auth {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.boton-auth:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navegacion-principal {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .menu-principal,
+    .botones-usuario,
+    .botones-auth {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .boton-nav,
+    .boton-cerrar-sesion,
+    .boton-auth {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}

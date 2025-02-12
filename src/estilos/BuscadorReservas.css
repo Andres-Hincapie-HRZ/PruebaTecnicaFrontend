@@ -1,0 +1,135 @@
+.buscador-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem 2.5rem 0.8rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.formulario-busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.grupo-busqueda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.campo-busqueda {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0.5rem 0;
+}
+
+.campo-busqueda:hover {
+  border-color: #000;
+}
+
+.campo-busqueda:focus-within {
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.icono-campo {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1a1a1a;
+  font-size: 1.2rem;
+}
+
+.input-busqueda {
+  width: 100%;
+  padding: 1.2rem 1rem 1.2rem 3rem;
+  border: none;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  outline: none;
+}
+
+.input-busqueda::placeholder {
+  color: #666;
+}
+
+select.input-busqueda {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231a1a1a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2rem;
+  padding-right: 3rem;
+}
+
+.boton-buscar {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: center;
+  min-width: 200px;
+  margin-top: -0.5rem;
+}
+
+.boton-buscar:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boton-buscar:active {
+  transform: translateY(0);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .buscador-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .grupo-busqueda {
+    grid-template-columns: 1fr;
+  }
+
+  .boton-buscar {
+    width: 100%;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buscador-container {
+  animation: fadeIn 0.5s ease-out;
+} 

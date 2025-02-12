@@ -1,0 +1,53 @@
+.buscador-reservas {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.campos-busqueda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.formulario-reserva {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-reservas {
+  padding: 2rem;
+}
+
+.tabla-reservas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla-reservas th,
+.tabla-reservas td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.estado-confirmada {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.estado-pendiente {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.estado-cancelada {
+  color: #dc3545;
+  font-weight: 500;
+} 

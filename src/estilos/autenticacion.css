@@ -1,0 +1,100 @@
+.contenedor-autenticacion {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-auth {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.campo-formulario {
+  margin-bottom: 1.5rem;
+}
+
+.campo-formulario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.input-con-icono {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-con-icono:focus-within {
+  border-color: #333;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-con-icono .icono {
+  color: #666;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.input-con-icono input,
+.input-con-icono select {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #333;
+  width: 100%;
+}
+
+.input-con-icono select {
+  cursor: pointer;
+}
+
+.error-mensaje {
+  background-color: #fff2f2;
+  color: #dc3545;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ffcdd2;
+  font-size: 0.9rem;
+}
+
+.boton-principal {
+  width: 100%;
+  padding: 1rem;
+  background-color: #d3d3d3;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-principal:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transform: translateY(-1px);
+}
+
+.boton-principal:active {
+  transform: translateY(1px);
+} 

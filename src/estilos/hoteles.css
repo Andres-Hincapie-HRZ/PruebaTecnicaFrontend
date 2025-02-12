@@ -1,0 +1,60 @@
+.lista-hoteles {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-hoteles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-hotel {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-hotel:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-hotel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.detalles-hotel {
+  padding: 1.5rem;
+}
+
+.detalles-hotel h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.estrellas {
+  color: #ffd700;
+  margin: 0.5rem 0;
+}
+
+.precio {
+  font-size: 1.25rem;
+  color: #0066cc;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.boton-ver-mas {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} 
